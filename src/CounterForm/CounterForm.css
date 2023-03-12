@@ -1,5 +1,5 @@
-.counter-form-container .header {
-    text-align: center;
+.counter-form-container {
+    width: 100%;
 }
 
 .form-wrapper {
@@ -13,6 +13,17 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* .counter-group button,
+.counter-group input {
+    display: flex;
+    flex: 1;
+} */
+
+.counter-group input {
+    flex-grow: 1;
 }
 
 ul,li {

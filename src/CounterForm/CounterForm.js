@@ -1,32 +1,14 @@
-import { useState } from 'react';
 import './CounterForm.css';
 
-function CounterForm() {
-
-    const intialCount = 0;
-    const [count, setCount] = useState(intialCount);
-
-    const incrementHandler = () => { 
-        setCount(count + 1);
-    }
-
-    const decrementHandler = () => {
-        setCount((prev) => prev ? count - 1 : prev);
-    }
-
-    const countChangeHandler = (event) => {
-        setCount(parseInt(event.target.value));
-    }
+function CounterForm({itemDetails, incrementHandler, decrementHandler, countChangeHandler}) {
 
     return (
         <div className="counter-form-container">
-            <h3 className="header">Counter App</h3>
-            
             <div className="form-wrapper">
                 <div className="counter-group">
-                    <button  onClick={decrementHandler}>-</button>
-                    <input type="number" name="count" value={count} className="counter-input" onChange={countChangeHandler} />
-                    <button onClick={incrementHandler}>+</button>
+                    <button  onClick={() => decrementHandler(itemDetails)}>-</button>
+                    <input type="number" name="count" value={itemDetails.buyingQunaity} className="counter-input" onChange={(event) => countChangeHandler(event, itemDetails)} />
+                    <button onClick={() => incrementHandler(itemDetails)}>+</button>
                 </div>
             </div>
             {/* <ul>

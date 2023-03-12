@@ -1,10 +1,10 @@
 import './App.css';
-import CounterForm from './CounterForm/CounterForm';
+import ShoppingList from './ShoppingList/ShoppingList';
 
 function App() {
   return (
     <div>
-        <CounterForm />
+        <ShoppingList />
     </div>
   );
 }

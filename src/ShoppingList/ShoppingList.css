@@ -1,0 +1,7 @@
+.shopping-list-container {
+    padding: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
