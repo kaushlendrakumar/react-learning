@@ -43,7 +43,7 @@ ul {
 }
 
 /* form controls css */
-button {
+.counter-form-container button {
     height: 2rem;
     width: 2rem;
     font-size: 1rem;

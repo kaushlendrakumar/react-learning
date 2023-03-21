@@ -1,10 +1,12 @@
 import './App.css';
-import ShoppingList from './ShoppingList/ShoppingList';
+import ShoppingList from './Components/ShoppingList/ShoppingList';
+import Home from './Pages/Home/Home';
+
 
 function App() {
   return (
     <div>
-        <ShoppingList />
+        <Home />
     </div>
   );
 }
